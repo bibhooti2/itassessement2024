@@ -1,0 +1,23 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color</title>
+</head>
+<body>
+
+<p id="myParagraph">This is a paragraph.</p>
+<button onclick="changeBackgroundColor()">Change Background Color</button>
+
+<script>
+function changeBackgroundColor() {
+    const paragraph = document.getElementById('myParagraph');
+    // Generate a random hexadecimal color code
+    const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+    // Set the background color of the paragraph
+    paragraph.style.backgroundColor = randomColor;
+}
+</script>
+
+</body>
+</html>
